@@ -23,7 +23,11 @@ private int binarySearch(int[] nums,int low,int high,int target){
         }else{
             return binarySearch(nums,low,mid-1,target);
         }
-        
-        
     }
 ```
+<br>
+
+The time complexity is O(log n)
+<br>
+Binary search can be solved using a while loop by altering the value of l,h<br>
+The time complexity for it is also O(log n)<br>
