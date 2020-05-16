@@ -8,4 +8,22 @@ DC is not about splitting a big module whose functions are different, say for eg
 <h3>Binary Search</h3><br>
 l = low will be the first element<br>
 h = high will be the last element<br>
-Middle = Math.floor(l+h/2)
+Middle value = Math.floor((l+h)/2)
+
+
+```
+private int binarySearch(int[] nums,int low,int high,int target){        
+        int mid = (low+high)/2;
+        if(high<low){
+            return -1;
+        }else if(nums[mid]==target){
+            return mid;
+        }else if(nums[mid]<target){
+            return binarySearch(nums,mid+1,high,target);
+        }else{
+            return binarySearch(nums,low,mid-1,target);
+        }
+        
+        
+    }
+```
